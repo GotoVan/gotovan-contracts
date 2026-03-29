@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Removal Services Contract – United Kingdom | GotoVan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --mid: #4a4a4a;
+      --light: #7a7a7a;
+      --rule: #d0d0d0;
+      --accent: #91bcf0;
+      --bg: #ffffff;
+      --page-width: 820px;
+      --font-serif: 'Source Serif 4', Georgia, serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f0ece6;
+      font-family: var(--font-serif);
+      color: var(--ink);
+      font-size: 10.5pt;
+      line-height: 1.65;
+    }
+
+    .page {
+      background: var(--bg);
+      max-width: var(--page-width);
+      margin: 40px auto;
+      padding: 72px 80px;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.12);
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--ink);
+      margin-bottom: 40px;
+    }
+
+    .header-logo img {
+      height: 64px;
+      width: auto;
+      display: block;
+    }
+
+    .header-meta {
+      text-align: right;
+      font-size: 8.5pt;
+      color: var(--light);
+      line-height: 1.7;
+    }
+
+    .header-meta strong {
+      display: block;
+      font-size: 9pt;
+      color: var(--mid);
+      font-weight: 600;
+    }
+
+    .ref-badge {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 3px 10px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 8pt;
+      letter-spacing: 0.08em;
+    }
+
+    /* ── TITLE ── */
+    .contract-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contract-title h1 {
+      font-family: var(--font-display);
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    .contract-title .subtitle {
+      margin-top: 8px;
+      font-size: 10pt;
+      color: var(--mid);
+      font-style: italic;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 12pt;
+      font-weight: 600;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+      letter-spacing: 0.01em;
+    }
+
+    .section-title span.num {
+      color: var(--accent);
+      margin-right: 6px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: var(--mid);
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      color: var(--mid);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ── PARTIES TABLE ── */
+    .parties {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 36px;
+    }
+
+    .party-block {
+      padding: 20px 22px;
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--ink);
+    }
+
+    .party-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .party-name {
+      font-family: var(--font-display);
+      font-size: 12pt;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .party-detail {
+      font-size: 9pt;
+      color: var(--mid);
+      line-height: 1.7;
+    }
+
+    /* ── PLACEHOLDER ── */
+    .ph {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── PRICE BOX ── */
+    .price-box {
+      background: #f8f7f5;
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--ink);
+      padding: 18px 22px;
+      margin: 14px 0;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .price-row:last-child { margin-bottom: 0; }
+    .price-label { font-size: 9.5pt; color: var(--mid); }
+
+    .price-value {
+      font-family: var(--font-display);
+      font-size: 14pt;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .price-sub { font-size: 9pt; color: var(--light); }
+
+    /* ── NOTICE BOX ── */
+    .notice-box {
+      background: #f8f7f5;
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 9.5pt;
+    }
+
+    .notice-box .notice-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    /* ── CONDITIONAL CLAUSES ── */
+    .conditional {
+      border-left: 3px solid #e5e7eb;
+      padding: 10px 16px;
+      margin: 10px 0;
+      background: #fafafa;
+      font-size: 9.5pt;
+    }
+
+    .conditional .cond-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .conditional.yes { border-left-color: #16a34a; }
+    .conditional.no  { border-left-color: #dc2626; }
+
+    /* ── SIGNATURE BLOCK ── */
+    .signature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .sig-block .sig-party {
+      font-size: 8pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 8px;
+    }
+
+    .sig-block .sig-name {
+      font-family: var(--font-display);
+      font-size: 11pt;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .sig-line {
+      border-bottom: 1px solid var(--ink);
+      height: 48px;
+      margin: 16px 0 8px;
+    }
+
+    .sig-field {
+      font-size: 9pt;
+      color: var(--light);
+      margin-bottom: 14px;
+    }
+
+    /* ── ANNEXE PAGE ── */
+    .page-break {
+      page-break-before: always;
+      margin-top: 60px;
+      padding-top: 60px;
+      border-top: 2px solid var(--ink);
+    }
+
+    .annexe-title {
+      font-family: var(--font-display);
+      font-size: 18pt;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .annexe-subtitle {
+      font-size: 10pt;
+      color: var(--mid);
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+
+    .annexe-content {
+      min-height: 400px;
+      border: 1px dashed var(--rule);
+      padding: 24px;
+      font-size: 9.5pt;
+      color: var(--light);
+    }
+
+    /* ── FOOTER ── */
+    .doc-footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      font-size: 8pt;
+      color: var(--light);
+    }
+
+    @media print {
+        body { background: white; }
+        .page { 
+            box-shadow: none; 
+            margin: 0; 
+            padding: 48px 56px;
+        }
+        @page {
+            margin: 48px 56px;
+        }
+    }
+
+    /* ── PAGE BREAK CONTROL ── */
+    .section {
+        page-break-inside: avoid;
+    }
+
+    .clause {
+        page-break-inside: avoid;
+    }
+
+    .parties {
+        page-break-inside: avoid;
+    }
+
+    .signature-grid {
+        page-break-inside: avoid;
+    }
+
+    .price-box {
+        page-break-inside: avoid;
+    }
+
+    .cmr-box {
+        page-break-inside: avoid;
+    }
+
+    .notice-box {
+        page-break-inside: avoid;
+    }
+
+    .party-block {
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3, .section-title {
+        page-break-after: avoid;
+    }
+
+    @page {
+        margin: 48px 0;
+    }
+
+    .page {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ══ HEADER ══ -->
+  <div class="header">
+    <div class="header-logo">
+      <img src="logo.png" alt="GotoVan Logo" />
+    </div>
+    <div class="header-meta">
+      <strong>GotoVan – The Avocado Shop LTD</strong>
+      61 High Street, Chobham, Surrey, GU24 8AF, United Kingdom<br/>
+      +44 (0) 7394329184 · hello@gotovan.co.uk<br/>
+      Company registered in England and Wales<br/>
+      <span class="ref-badge">REF: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+    </div>
+  </div>
+
+  <!-- ══ TITLE ══ -->
+  <div class="contract-title">
+    <h1>Removal Services Contract<br/>— United Kingdom</h1>
+    <div class="subtitle">Between a trader and a consumer — England &amp; Wales</div>
+  </div>
+
+  <!-- ══ CONSUMER RIGHTS NOTICE ══ -->
+  <div class="notice-box" style="margin-bottom:36px;">
+    <div class="notice-label">Your statutory rights</div>
+    This contract is governed by the <strong>Consumer Rights Act 2015</strong>. You have the right to receive services performed with reasonable care and skill, within a reasonable time, and at a reasonable price where no price has been agreed. Nothing in this contract affects your statutory rights.
+  </div>
+
+  <!-- ══ PARTIES ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">§</span> Parties to this Agreement</div>
+    <div class="parties">
+      <div class="party-block">
+        <div class="party-label">The Company</div>
+        <div class="party-name">GotoVan – The Avocado Shop LTD</div>
+        <div class="party-detail">
+          61 High Street, Chobham, Surrey, GU24 8AF<br/>
+          United Kingdom<br/>
+          Tel: +44 (0) 7394329184<br/>
+          Email: hello@gotovan.co.uk<br/>
+          Representative: Domingo Gonzalez Alonso
+        </div>
+      </div>
+      <div class="party-block">
+        <div class="party-label">The Customer</div>
+        <div class="party-name"><span class="ph">{{CLIENT_NAME}}</span></div>
+        <div class="party-detail">
+          Email: <span class="ph">{{CLIENT_EMAIL}}</span><br/>
+          Phone: <span class="ph">{{CLIENT_PHONE}}</span><br/>
+          Billing address: <span class="ph">{{CLIENT_ADDRESS}}</span>
+        </div>
+      </div>
+    </div>
+    <p>Both parties, having sufficient legal capacity, agree to enter into this removal services contract on the terms set out below.</p>
+  </div>
+
+  <!-- ══ CLAUSE 1 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">1.</span> Scope of Service</div>
+    <p>THE COMPANY agrees to provide THE CUSTOMER with the following removal services:</p>
+    <ul>
+      <!-- CONDITIONAL: Packaging -->
+      {{#if IF_PACKAGING_YES}}
+      <li>Professional packing of all items listed in Annexe I, using materials supplied and fully covered in cost by THE COMPANY.</li>
+      {{/if}}
+      {{#if IF_PACKAGING_NO}}
+      <li>Packing of goods is the sole responsibility of THE CUSTOMER. THE COMPANY accepts no liability for damage resulting from inadequate packing carried out by or on behalf of THE CUSTOMER.</li>
+      {{/if}}
+      <li>Loading of goods at the collection address.</li>
+      <li>Road transport to the destination address.</li>
+      <li>Unloading and basic placement of goods within the destination property.</li>
+      <!-- CONDITIONAL: Installation -->
+      {{#if IF_INSTALLATION_YES}}
+      <li>Basic furniture reassembly and installation as agreed prior to the service date.</li>
+      {{/if}}
+      {{#if IF_INSTALLATION_NO}}
+      <li>Furniture assembly, installation, or detailed placement in wardrobes and storage units is not included. These services may be contracted separately in writing.</li>
+      {{/if}}
+    </ul>
+  </div>
+
+  <!-- ══ CLAUSE 2 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">2.</span> Addresses</div>
+    <p><strong>Collection address:</strong> <span class="ph">{{COLLECTION_ADDRESS}}</span></p>
+    <p><strong>Destination address:</strong> <span class="ph">{{DESTINATION_ADDRESS}}</span></p>
+    <p>The quoted price is based on the access conditions declared by THE CUSTOMER and set out below:</p>
+    <ul>
+      <!-- CONDITIONAL: Elevator -->
+      {{#if IF_ELEVATOR_YES}}
+      <li>A working passenger or goods lift is available at the destination property. The quoted price is based on lift access being operational on the day of the removal.</li>
+      {{/if}}
+      {{#if IF_ELEVATOR_NO}}
+      <li>No lift access is available. The quoted price includes manual carry via staircase as described in Annexe I (floor level and item count declared).</li>
+      {{/if}}
+      <!-- CONDITIONAL: Parking -->
+      {{#if IF_PARKING_YES}}
+      <li>Parking for a large removal vehicle has been confirmed at both collection and destination addresses.</li>
+      {{/if}}
+      {{#if IF_PARKING_NO}}
+      <li>It is THE CUSTOMER's responsibility to arrange any parking suspensions, permits, or reserved access required for the removal vehicle at both addresses. Any fines, delays, or additional costs arising from failure to secure adequate parking will be charged to THE CUSTOMER.</li>
+      {{/if}}
+    </ul>
+  </div>
+
+  <!-- ══ CLAUSE 3 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">3.</span> Date and Schedule</div>
+    <p>The removal is scheduled for <strong><span class="ph">{{REMOVAL_DATE}}</span></strong>.</p>
+    <p>THE COMPANY's crew will arrive at the collection address at <strong>08:00</strong> to commence loading. Delivery at the destination address is anticipated on the same day, subject to road conditions, access, and any circumstances beyond THE COMPANY's reasonable control.</p>
+    <p>Any date change requested by THE CUSTOMER with fewer than 72 hours' notice may incur the cancellation charges set out in Clause 11.</p>
+  </div>
+
+  <!-- ══ CLAUSE 4 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">4.</span> Price</div>
+    <div class="price-box">
+      <div class="price-row">
+        <span class="price-label">Total price (inclusive of VAT)</span>
+        <span class="price-value">£<span class="ph">{{PRICE_VAT}}</span></span>
+      </div>
+      <div class="price-row">
+        <span class="price-label">Price before VAT</span>
+        <span class="price-sub">£<span class="ph">{{PRICE}}</span></span>
+      </div>
+    </div>
+    <p>The price covers all services described in Clause 1. Any service not expressly included must be agreed in writing before the removal date and will be invoiced separately.</p>
+    <p>If the volume or number of items on the day materially exceeds the inventory declared in Annexe I, THE COMPANY reserves the right to revise the price. Any revision will be communicated to and accepted by THE CUSTOMER before loading commences.</p>
+  </div>
+
+  <!-- ══ CLAUSE 5 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">5.</span> Payment</div>
+    <p>THE COMPANY will issue a secure <strong>Stripe</strong> payment link to <span class="ph">{{CLIENT_EMAIL}}</span> upon execution of this contract. Payment is due by debit or credit card prior to the removal date.</p>
+    <p>In the event of non-payment, THE COMPANY reserves the right to exercise a <strong>lien</strong> over the goods transported, in accordance with the <strong>Torts (Interference with Goods) Act 1977</strong> and applicable common law rights of lien.</p>
+    <p>No goods will be released until all outstanding amounts have been settled in full.</p>
+  </div>
+
+  <!-- ══ CLAUSE 6 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">6.</span> Inventory and Declaration of Goods</div>
+    <p>This contract is based on the inventory supplied by THE CUSTOMER and attached as <strong>Annexe I</strong>. THE CUSTOMER warrants that:</p>
+    <ul>
+      <li>The inventory is complete, accurate, and a true representation of all goods to be moved.</li>
+      <li>No undeclared items of special or high monetary value are included.</li>
+      <li>No prohibited, hazardous, flammable, or controlled substances or items are included.</li>
+      <li>The goods are owned by THE CUSTOMER or THE CUSTOMER has full authority to arrange their removal.</li>
+    </ul>
+    <p>Any material inaccuracy or omission in the declared inventory releases THE COMPANY from liability in respect of undeclared goods or undeclared circumstances.</p>
+  </div>
+
+  <!-- ══ CLAUSE 7 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">7.</span> Access and Property Conditions</div>
+    <p>THE CUSTOMER warrants that the access conditions at both addresses are as described in Clause 2 and Annexe I. The quoted price includes:</p>
+    <ul>
+      <li>Reasonable vehicle access at both collection and destination addresses.</li>
+      <li>A maximum carry distance of 25 metres from vehicle to front door.</li>
+    </ul>
+    <p>The following are <strong>not included</strong> in the quoted price and will be quoted separately if required:</p>
+    <ul>
+      <li>Hoisting equipment or specialist access solutions.</li>
+      <li>Council parking permits or suspension of parking bays.</li>
+      <li>Manual staircase carry where a lift was declared as available but is inoperative on the day.</li>
+      <li>Delays caused by the property not being ready at the agreed start time.</li>
+    </ul>
+  </div>
+
+  <!-- ══ CLAUSE 8 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">8.</span> Liability</div>
+    <p>This contract is governed by, and construed in accordance with, the laws of <strong>England and Wales</strong>. THE COMPANY's liability is subject to:</p>
+    <ul>
+      <li><strong>Consumer Rights Act 2015</strong> — services must be performed with reasonable care and skill.</li>
+      <li><strong>Carriage of Goods by Road Act 1965</strong> — where applicable to the transport leg.</li>
+      <li><strong>Torts (Interference with Goods) Act 1977</strong> — governing lien and goods in transit.</li>
+    </ul>
+    <p>Where no additional value declaration has been made, THE COMPANY's liability for loss of or damage to goods is limited to the current market value of the item, not exceeding the statutory limits applicable under the relevant legislation in force at the date of the removal.</p>
+    <p>THE COMPANY shall not be liable for:</p>
+    <ul>
+      <li>Loss or damage caused by circumstances beyond THE COMPANY's reasonable control (force majeure).</li>
+      <li>Inherent vice, latent defect, or natural deterioration of the goods.</li>
+      <li>Damage resulting from packing carried out by THE CUSTOMER or any third party.</li>
+      <li>Items not listed in Annexe I.</li>
+      <li>Damage to fragile items not clearly identified or adequately protected.</li>
+      <li>Loss of earnings, loss of use, or any indirect or consequential loss.</li>
+    </ul>
+  </div>
+
+  <!-- ══ CLAUSE 9 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">9.</span> Insurance</div>
+    <p>THE COMPANY holds goods in transit insurance in accordance with applicable UK law and industry standards.</p>
+    <p>If THE CUSTOMER wishes to declare a specific replacement value for any item or the entire consignment, or to arrange comprehensive all-risks cover, this must be requested in writing no later than <strong>48 hours before the removal date</strong>. Any additional premium will be communicated and agreed in writing before the service commences.</p>
+    <p>THE CUSTOMER is advised to verify their own contents insurance policy, as some household policies extend to removals in transit.</p>
+  </div>
+
+  <!-- ══ CLAUSE 10 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">10.</span> Claims and Complaints</div>
+    <ul>
+      <li><strong>Visible damage or loss:</strong> must be noted in writing on the delivery receipt at the time of delivery.</li>
+      <li><strong>Concealed damage:</strong> must be reported in writing to hello@gotovan.co.uk within <strong>7 calendar days</strong> of the delivery date.</li>
+    </ul>
+    <p>Signing the delivery receipt without reservation constitutes acceptance that goods have been received in good condition. Claims made outside the above timeframes may be rejected.</p>
+    <p>THE COMPANY operates an internal complaints procedure. All formal complaints should be submitted in writing to hello@gotovan.co.uk. THE COMPANY will acknowledge complaints within 5 business days and aim to resolve them within 28 days. If you are not satisfied with the outcome, you may refer the dispute to an independent Alternative Dispute Resolution (ADR) body.</p>
+  </div>
+
+  <!-- ══ CLAUSE 11 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">11.</span> Cancellation and Amendment</div>
+
+    <div class="notice-box">
+      <div class="notice-label">Consumer Contracts Regulations 2013 — Right to Cancel</div>
+      Where this contract has been entered into at a distance or off-premises, THE CUSTOMER has the right to cancel within <strong>14 days</strong> of the contract date without giving any reason, except where the service has commenced at THE CUSTOMER's explicit request before the cooling-off period expires, in which case THE CUSTOMER remains liable for services already performed.
+    </div>
+
+    <p>Following expiry of the statutory cooling-off period, or for contracts not subject to it, the following cancellation charges apply:</p>
+    <ul>
+      <li><strong>More than 7 calendar days</strong> before the removal date: full refund of any amount paid.</li>
+      <li><strong>Between 7 and 3 calendar days</strong> before: 30% of the total contract price retained.</li>
+      <li><strong>Less than 72 hours</strong> before: 50% of the total contract price retained.</li>
+    </ul>
+    <p>Any amendment to date, address, or scope of service requires written agreement by both parties and may result in a price adjustment.</p>
+  </div>
+
+  <!-- ══ CLAUSE 12 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">12.</span> Data Protection</div>
+    <p>THE COMPANY processes personal data provided by THE CUSTOMER solely for the purpose of fulfilling this contract, in accordance with the <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the <strong>Data Protection Act 2018</strong>.</p>
+    <p>Personal data will not be sold or shared with third parties except where operationally necessary for the execution of this service (e.g. sub-contracted transport operators, insurers) or where required by law. THE CUSTOMER may exercise their rights of access, rectification, erasure, restriction, and portability by contacting hello@gotovan.co.uk.</p>
+    <p>The right to lodge a complaint with the <strong>Information Commissioner's Office (ICO)</strong> — ico.org.uk — is available to THE CUSTOMER at all times.</p>
+  </div>
+
+  <!-- ══ CLAUSE 13 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">13.</span> Governing Law and Jurisdiction</div>
+    <p>This contract is governed by the laws of <strong>England and Wales</strong>. Any dispute arising from or in connection with this contract shall be subject to the exclusive jurisdiction of the courts of England and Wales, without prejudice to THE CUSTOMER's rights to bring proceedings before any court of competent jurisdiction in their place of habitual residence.</p>
+  </div>
+
+  <!-- ══ CLAUSE 14 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">14.</span> Entire Agreement and Execution</div>
+    <p>This contract, together with Annexe I (Inventory), constitutes the entire agreement between the parties relating to the subject matter hereof and supersedes all prior representations, negotiations, and understandings, whether oral or written.</p>
+    <p>No variation of this contract shall be effective unless agreed in writing and signed by both parties.</p>
+
+    <div class="signature-grid">
+      <div class="sig-block">
+        <div class="sig-party">The Company</div>
+        <div class="sig-name">GotoVan – The Avocado Shop LTD</div>
+        <div class="sig-field">Authorised representative: Domingo Gonzalez Alonso</div>
+        <div class="sig-line"></div>
+        <div class="sig-field">Signature</div>
+        <div class="sig-line" style="height:28px;"></div>
+        <div class="sig-field">Date</div>
+      </div>
+      <div class="sig-block">
+        <div class="sig-party">The Customer</div>
+        <div class="sig-name"><span class="ph">{{CLIENT_NAME}}</span></div>
+        <div class="sig-field">Passport / Driving Licence No: ___________________________</div>
+        <div class="sig-line"></div>
+        <div class="sig-field">Signature</div>
+        <div class="sig-line" style="height:28px;"></div>
+        <div class="sig-field">Date</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <div class="doc-footer">
+    <span>GotoVan – hello@gotovan.co.uk</span>
+    <span>Ref: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+  </div>
+
+  <!-- ══ ANNEXE I ══ -->
+  <div class="page-break">
+    <div class="annexe-title">Annexe I — Inventory</div>
+    <div class="annexe-subtitle">
+      Forming part of Contract Ref. <span class="ph">{{CONTRACT_REFERENCE}}</span> between GotoVan – The Avocado Shop LTD and <span class="ph">{{CLIENT_NAME}}</span>.
+    </div>
+    <div class="annexe-content">
+      <!-- INJECT INVENTORY HERE -->
+      <span class="ph">{{ANNEXE_CONTENT}}</span>
+    </div>
+    <div class="doc-footer" style="margin-top:32px;">
+      <span>GotoVan – hello@gotovan.co.uk</span>
+      <span>Annexe I · Ref: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+    </div>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>

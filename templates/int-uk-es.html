@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Removal Contract UK → Spain | GotoVan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --mid: #4a4a4a;
+      --light: #7a7a7a;
+      --rule: #d0d0d0;
+      --accent-en: #91bcf0;
+      --accent-es: #004aad;
+      --bg: #ffffff;
+      --bg-en: #f0f4ff;
+      --bg-es: #fff5f5;
+      --page-width: 820px;
+      --font-serif: 'Source Serif 4', Georgia, serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f0ece6;
+      font-family: var(--font-serif);
+      color: var(--ink);
+      font-size: 10.5pt;
+      line-height: 1.65;
+    }
+
+    .page {
+      background: var(--bg);
+      max-width: var(--page-width);
+      margin: 40px auto;
+      padding: 72px 80px;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.12);
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--ink);
+      margin-bottom: 40px;
+    }
+
+    .header-logo img {
+      height: 64px;
+      width: auto;
+      display: block;
+    }
+
+    .header-meta {
+      text-align: right;
+      font-size: 8.5pt;
+      color: var(--light);
+      line-height: 1.7;
+    }
+
+    .header-meta strong {
+      display: block;
+      font-size: 9pt;
+      color: var(--mid);
+      font-weight: 600;
+    }
+
+    .ref-badge {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 3px 10px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 8pt;
+      letter-spacing: 0.08em;
+    }
+
+    /* ── TITLE ── */
+    .contract-title {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .contract-title h1 {
+      font-family: var(--font-display);
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    .contract-title h2 {
+      font-family: var(--font-display);
+      font-size: 14pt;
+      font-weight: 600;
+      color: var(--mid);
+      margin-top: 6px;
+      font-style: italic;
+    }
+
+    .lang-flags {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin: 14px 0 32px;
+      font-size: 8.5pt;
+      color: var(--light);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .flag-en {
+      padding: 3px 12px;
+      border: 1px solid var(--accent-en);
+      color: var(--accent-en);
+      font-weight: 600;
+    }
+
+    .flag-es {
+      padding: 3px 12px;
+      border: 1px solid var(--accent-es);
+      color: var(--accent-es);
+      font-weight: 600;
+    }
+
+    /* ── BILINGUAL CLAUSE BLOCK ── */
+    .clause {
+      margin-bottom: 36px;
+    }
+
+    .clause-en,
+    .clause-es {
+      padding: 18px 22px;
+      margin-bottom: 0;
+    }
+
+    .clause-en {
+      background: var(--bg-en);
+      border-left: 4px solid var(--accent-en);
+      border-bottom: none;
+    }
+
+    .clause-es {
+      background: var(--bg-es);
+      border-left: 4px solid var(--accent-es);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lang-tag {
+      font-size: 7pt;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: inline-block;
+      padding: 2px 7px;
+    }
+
+    .lang-tag.en {
+      background: var(--accent-en);
+      color: #fff;
+    }
+
+    .lang-tag.es {
+      background: var(--accent-es);
+      color: #fff;
+    }
+
+    /* ── SECTION TITLE ── */
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 12pt;
+      font-weight: 600;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 6px;
+      margin-bottom: 0;
+      margin-top: 40px;
+      letter-spacing: 0.01em;
+    }
+
+    .section-title:first-of-type {
+      margin-top: 0;
+    }
+
+    .section-title span.num {
+      color: var(--ink);
+      margin-right: 6px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: var(--mid);
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      color: var(--mid);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ── PARTIES TABLE ── */
+    .parties {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .party-block {
+      padding: 20px 22px;
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--ink);
+    }
+
+    .party-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .party-name {
+      font-family: var(--font-display);
+      font-size: 12pt;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .party-detail {
+      font-size: 9pt;
+      color: var(--mid);
+      line-height: 1.7;
+    }
+
+    /* ── PLACEHOLDER ── */
+    .ph {
+      font-style: italic;
+      color: var(--accent-en);
+      font-weight: 600;
+    }
+
+    /* ── PRICE BOX ── */
+    .price-box {
+      background: #f8f7f5;
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--ink);
+      padding: 18px 22px;
+      margin: 12px 0;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .price-row:last-child { margin-bottom: 0; }
+    .price-label { font-size: 9.5pt; color: var(--mid); }
+
+    .price-value {
+      font-family: var(--font-display);
+      font-size: 13pt;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .price-sub { font-size: 9pt; color: var(--light); }
+
+    /* ── NOTICE BOX ── */
+    .notice-box {
+      background: #f8f7f5;
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--accent-en);
+      padding: 14px 18px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+    }
+
+    .notice-box .notice-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-en);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .notice-box.es {
+      border-left-color: var(--accent-es);
+    }
+
+    .notice-box.es .notice-label {
+      color: var(--accent-es);
+    }
+
+    /* ── BORDER / CMR HIGHLIGHT ── */
+    .cmr-box {
+      background: #fefce8;
+      border: 1px solid #fbbf24;
+      border-left: 4px solid #d97706;
+      padding: 14px 18px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+    }
+
+    .cmr-box .cmr-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #92400e;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    /* ── CONDITIONAL CLAUSES ── */
+    .conditional {
+      border-left: 3px solid #e5e7eb;
+      padding: 10px 16px;
+      margin: 10px 0;
+      background: #fafafa;
+      font-size: 9.5pt;
+    }
+
+    .conditional .cond-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .conditional.yes { border-left-color: #16a34a; }
+    .conditional.no  { border-left-color: #dc2626; }
+
+    /* ── SIGNATURE BLOCK ── */
+    .signature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .sig-block .sig-party {
+      font-size: 8pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 8px;
+    }
+
+    .sig-block .sig-name {
+      font-family: var(--font-display);
+      font-size: 11pt;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .sig-line {
+      border-bottom: 1px solid var(--ink);
+      height: 48px;
+      margin: 16px 0 8px;
+    }
+
+    .sig-field {
+      font-size: 9pt;
+      color: var(--light);
+      margin-bottom: 14px;
+    }
+
+    /* ── ANNEXE PAGE ── */
+    .page-break {
+      page-break-before: always;
+      margin-top: 60px;
+      padding-top: 60px;
+      border-top: 2px solid var(--ink);
+    }
+
+    .annexe-title {
+      font-family: var(--font-display);
+      font-size: 18pt;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .annexe-subtitle {
+      font-size: 10pt;
+      color: var(--mid);
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+
+    .annexe-content {
+      min-height: 400px;
+      border: 1px dashed var(--rule);
+      padding: 24px;
+      font-size: 9.5pt;
+      color: var(--light);
+    }
+
+    /* ── FOOTER ── */
+    .doc-footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      font-size: 8pt;
+      color: var(--light);
+    }
+
+    @media print {
+        body { background: white; }
+        .page { 
+            box-shadow: none; 
+            margin: 0; 
+            padding: 48px 56px;
+        }
+        @page {
+            margin: 48px 56px;
+        }
+    }
+
+    /* ── PAGE BREAK CONTROL ── */
+    .section {
+        page-break-inside: avoid;
+    }
+
+    .clause {
+        page-break-inside: avoid;
+    }
+
+    .parties {
+        page-break-inside: avoid;
+    }
+
+    .signature-grid {
+        page-break-inside: avoid;
+    }
+
+    .price-box {
+        page-break-inside: avoid;
+    }
+
+    .cmr-box {
+        page-break-inside: avoid;
+    }
+
+    .notice-box {
+        page-break-inside: avoid;
+    }
+
+    .party-block {
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3, .section-title {
+        page-break-after: avoid;
+    }
+
+    @page {
+        margin: 48px 0;
+    }
+
+    .page {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ══ HEADER ══ -->
+  <div class="header">
+    <div class="header-logo">
+      <img src="logo.png" alt="GotoVan Logo" />
+    </div>
+    <div class="header-meta">
+      <strong>GotoVan – The Avocado Shop LTD</strong>
+      61 High Street, Chobham, Surrey, GU24 8AF, United Kingdom<br/>
+      +44 (0) 7394329184 · hello@gotovan.co.uk<br/>
+      <span class="ref-badge">REF: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+    </div>
+  </div>
+
+  <!-- ══ TITLE ══ -->
+  <div class="contract-title">
+    <h1>International Removal Services Contract<br/>United Kingdom → Spain</h1>
+    <h2>Contrato Internacional de Servicios de Mudanza<br/>Reino Unido → España</h2>
+  </div>
+  <div class="lang-flags">
+    <span class="flag-en">English</span>
+    <span class="flag-es">Español</span>
+  </div>
+
+  <!-- ══ PARTIES ══ -->
+  <div class="section-title"><span class="num">§</span> Parties to this Agreement / Partes del Contrato</div>
+
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <div class="parties">
+        <div class="party-block">
+          <div class="party-label">The Company</div>
+          <div class="party-name">GotoVan – The Avocado Shop LTD</div>
+          <div class="party-detail">
+            61 High Street, Chobham, Surrey, GU24 8AF<br/>
+            United Kingdom<br/>
+            Tel: +44 (0) 7394329184<br/>
+            Email: hello@gotovan.co.uk<br/>
+            Representative: Domingo Gonzalez Alonso
+          </div>
+        </div>
+        <div class="party-block">
+          <div class="party-label">The Customer</div>
+          <div class="party-name"><span class="ph">{{CLIENT_NAME}}</span></div>
+          <div class="party-detail">
+            Email: <span class="ph">{{CLIENT_EMAIL}}</span><br/>
+            Phone: <span class="ph">{{CLIENT_PHONE}}</span><br/>
+            Billing address: <span class="ph">{{CLIENT_ADDRESS}}</span>
+          </div>
+        </div>
+      </div>
+      <p>Both parties, having sufficient legal capacity, agree to enter into this international removal services contract on the terms set out below.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <div class="parties">
+        <div class="party-block">
+          <div class="party-label">La Empresa</div>
+          <div class="party-name">GotoVan – The Avocado Shop LTD</div>
+          <div class="party-detail">
+            61 High Street, Chobham, Surrey, GU24 8AF<br/>
+            Reino Unido<br/>
+            Tel: +44 (0) 7394329184<br/>
+            Email: hello@gotovan.co.uk<br/>
+            Representante: Domingo Gonzalez Alonso
+          </div>
+        </div>
+        <div class="party-block">
+          <div class="party-label">El/La Cliente</div>
+          <div class="party-name"><span class="ph">{{CLIENT_NAME}}</span></div>
+          <div class="party-detail">
+            Email: <span class="ph">{{CLIENT_EMAIL}}</span><br/>
+            Teléfono: <span class="ph">{{CLIENT_PHONE}}</span><br/>
+            Dirección de facturación: <span class="ph">{{CLIENT_ADDRESS}}</span>
+          </div>
+        </div>
+      </div>
+      <p>Ambas partes, reconociéndose capacidad legal suficiente, acuerdan suscribir el presente contrato internacional de mudanza en los términos siguientes.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 1 ══ -->
+  <div class="section-title"><span class="num">1.</span> Scope of Service / Objeto del Contrato</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>THE COMPANY agrees to provide THE CUSTOMER with the following international removal services between the United Kingdom and Spain:</p>
+      <ul>
+        {{#if IF_PACKAGING_YES}}
+        <li>Professional packing of all items listed in Annexe I, using materials supplied and fully covered in cost by THE COMPANY.</li>
+        {{/if}}
+        {#if IF_PACKAGING_NO}}
+        <li>Packing of goods is the sole responsibility of THE CUSTOMER. THE COMPANY accepts no liability for damage resulting from inadequate packing carried out by or on behalf of THE CUSTOMER.</li>
+        {{/if}}
+        <li>Loading at the UK collection address.</li>
+        <li>International road transport from the United Kingdom to Spain, including border crossing.</li>
+        <li>Unloading and basic placement at the Spanish destination address.</li>
+        {{#if IF_INSTALLATION_YES}}
+        <li>Basic furniture reassembly and installation as agreed prior to the service date.</li>
+        {{/if}}
+        {{#if IF_INSTALLATION_NO}}
+        <li>Furniture assembly, installation, or detailed placement is not included unless separately contracted in writing.</li>
+        {{/if}}
+      </ul>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>LA EMPRESA se obliga a prestar a EL/LA CLIENTE los siguientes servicios de mudanza internacional entre el Reino Unido y España:</p>
+      <ul>
+        {{#if IF_PACKAGING_YES}}
+        <li>Embalaje profesional de los bienes relacionados en el Anexo I, con material asumido íntegramente por LA EMPRESA.</li>
+        {{/if}}
+        {{#if IF_PACKAGING_NO}}
+        <li>El embalaje será responsabilidad exclusiva de EL/LA CLIENTE. LA EMPRESA no asumirá responsabilidad por daños derivados de un embalaje insuficiente.</li>
+        {{/if}}
+        <li>Carga en el domicilio de origen en el Reino Unido.</li>
+        <li>Transporte internacional por carretera desde el Reino Unido hasta España, incluyendo cruce de frontera.</li>
+        <li>Descarga y colocación básica en el domicilio de destino en España.</li>
+        {{#if IF_INSTALLATION_YES}}
+        <li>Montaje básico de mobiliario según acuerdo previo.</li>
+        {{/if}}
+        {{#if IF_INSTALLATION_NO}}
+        <li>No se incluye montaje ni instalación de mobiliario salvo contratación expresa adicional por escrito.</li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 2 ══ -->
+  <div class="section-title"><span class="num">2.</span> Addresses / Direcciones</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p><strong>Collection address (UK):</strong> <span class="ph">{{COLLECTION_ADDRESS}}</span></p>
+      <p><strong>Destination address (Spain):</strong> <span class="ph">{{DESTINATION_ADDRESS}}</span></p>
+      <ul>
+        {{#if IF_ELEVATOR_YES}}
+        <li>A working lift is available at the destination property. The quoted price is based on lift access being operational on the delivery day.</li>
+        {{/if}}
+        {{#if IF_ELEVATOR_NO}}
+        <li>No lift access at destination. The quoted price includes manual staircase carry as declared in Annexe I.</li>
+        {{/if}}
+        {{#if IF_PARKING_YES}}
+        <li>Adequate parking for a large HGV has been confirmed at both collection and destination addresses.</li>
+        {{/if}}
+        {{#if IF_PARKING_NO}}
+        <li>It is THE CUSTOMER's responsibility to arrange any parking permits, bay suspensions, or reserved access required at both addresses. Costs arising from failure to do so will be charged to THE CUSTOMER.</li>
+        {{/if}}
+      </ul>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p><strong>Dirección de recogida (Reino Unido):</strong> <span class="ph">{{COLLECTION_ADDRESS}}</span></p>
+      <p><strong>Dirección de entrega (España):</strong> <span class="ph">{{DESTINATION_ADDRESS}}</span></p>
+      <ul>
+        {{#if IF_ELEVATOR_YES}}
+        <li>Ascensor operativo disponible en destino. El precio contempla este acceso.</li>
+        {{/if}}
+        {{#if IF_ELEVATOR_NO}}
+        <li>Sin ascensor en destino. El precio incluye acarreo por escalera según lo declarado en el Anexo I.</li>
+        {{/if}}
+        {{#if IF_PARKING_YES}}
+        <li>Estacionamiento para vehículo de gran tonelaje garantizado en origen y destino.</li>
+        {{/if}}
+        {{#if IF_PARKING_NO}}
+        <li>La obtención de permisos de estacionamiento o reserva de vía pública en ambas direcciones es responsabilidad de EL/LA CLIENTE. Los costes derivados de su incumplimiento serán repercutidos.</li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 3 ══ -->
+  <div class="section-title"><span class="num">3.</span> Date and Schedule / Fecha y Horario</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>The removal is scheduled to commence on <strong><span class="ph">{{REMOVAL_DATE}}</span></strong>. THE COMPANY's crew will arrive at the UK collection address at <strong>08:00</strong>. Given the international nature of the transit, delivery in Spain may occur on the following day. THE COMPANY will provide a confirmed delivery window no later than 24 hours before departure.</p>
+      <p>Estimated transit time may be affected by border procedures, customs inspections, road conditions, or other circumstances beyond THE COMPANY's reasonable control. THE COMPANY will communicate any material delays promptly.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>La mudanza queda fijada para el <strong><span class="ph">{{REMOVAL_DATE}}</span></strong>. El equipo de LA EMPRESA acudirá al domicilio de origen en el Reino Unido a las <strong>08:00 horas</strong>. Dado el carácter internacional del transporte, la entrega en España podrá efectuarse al día siguiente. LA EMPRESA confirmará la franja horaria de entrega con un mínimo de 24 horas de antelación a la salida.</p>
+      <p>El tiempo de tránsito estimado podrá verse afectado por procedimientos aduaneros, inspecciones en frontera, condiciones de tráfico o circunstancias ajenas a LA EMPRESA, quien comunicará sin demora cualquier retraso significativo.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 4 ══ -->
+  <div class="section-title"><span class="num">4.</span> Border Crossing, Customs &amp; Documentation / Frontera, Aduana y Documentación</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <div class="cmr-box">
+        <div class="cmr-label">CMR Convention — Convention on the Contract for the International Carriage of Goods by Road (Geneva, 1956)</div>
+        The international road transport leg of this service is governed by the <strong>CMR Convention</strong>, as incorporated into UK law by the <strong>Carriage of Goods by Road Act 1965</strong> and applicable in Spain under the same international framework. The CMR consignment note (waybill) constitutes the primary transport document and governs liability limits for the international leg.
+      </div>
+      <p>THE CUSTOMER is responsible for providing all documentation required for the customs clearance of personal effects moving from the United Kingdom to Spain, including but not limited to:</p>
+      <ul>
+        <li>Completed <strong>T2L</strong> or equivalent customs declaration form for personal effects (transfer of normal residence).</li>
+        <li>Proof of change of habitual residence (e.g. NIE, empadronamiento, employment or property documentation in Spain).</li>
+        <li>Detailed inventory in Spanish with estimated replacement values (Annexe I).</li>
+        <li>Valid passport or national identity document.</li>
+      </ul>
+      <p>THE COMPANY will provide the CMR consignment note and may assist with standard transport customs documentation. THE COMPANY assumes no liability for delays, costs, fines, or confiscation of goods resulting from incomplete, inaccurate, or missing documentation supplied by THE CUSTOMER.</p>
+      <p>Any customs duties, taxes, or border fees arising from the goods or their classification are the sole responsibility of THE CUSTOMER.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <div class="cmr-box">
+        <div class="cmr-label">Convenio CMR — Convenio sobre el Contrato de Transporte Internacional de Mercancías por Carretera (Ginebra, 1956)</div>
+        El tramo de transporte internacional por carretera de este servicio se rige por el <strong>Convenio CMR</strong>, incorporado al ordenamiento jurídico español mediante la adhesión de España al mismo, y aplicable en el Reino Unido en virtud de la <strong>Carriage of Goods by Road Act 1965</strong>. La carta de porte CMR constituye el documento de transporte principal y regula los límites de responsabilidad para el tramo internacional.
+      </div>
+      <p>EL/LA CLIENTE es responsable de aportar toda la documentación necesaria para el despacho aduanero de los efectos personales en el trayecto del Reino Unido a España, incluyendo, entre otros:</p>
+      <ul>
+        <li>Formulario de declaración aduanera <strong>T2L</strong> o equivalente para efectos personales (traslado de residencia habitual).</li>
+        <li>Justificante de cambio de residencia habitual (NIE, empadronamiento, contrato laboral o inmobiliario en España).</li>
+        <li>Inventario detallado en castellano con valores estimados de reposición (Anexo I).</li>
+        <li>Pasaporte o documento de identidad en vigor.</li>
+      </ul>
+      <p>LA EMPRESA emitirá la carta de porte CMR y podrá asistir en la gestión de la documentación aduanera de transporte estándar. LA EMPRESA no asumirá responsabilidad por retrasos, costes, multas o retención de bienes derivados de documentación incompleta, incorrecta o ausente aportada por EL/LA CLIENTE.</p>
+      <p>Los aranceles, impuestos aduaneros o tasas fronterizas que pudieran devengarse serán de cuenta exclusiva de EL/LA CLIENTE.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 5 ══ -->
+  <div class="section-title"><span class="num">5.</span> Price / Precio</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <div class="price-box">
+        <div class="price-row">
+          <span class="price-label">Total price (inclusive of VAT / IVA)</span>
+          <span class="price-value"><span class="ph">{{PRICE_VAT}}</span></span>
+        </div>
+        <div class="price-row">
+          <span class="price-label">Price before tax</span>
+          <span class="price-sub"><span class="ph">{{PRICE}}</span></span>
+        </div>
+      </div>
+      <p>The price covers all services described in Clause 1 and the international transport leg including standard border crossing procedures. It does not include customs duties, taxes, additional border inspections, or any costs arising from documentation errors supplied by THE CUSTOMER.</p>
+      <p>Any material increase in the volume or number of items above those declared in Annexe I may result in a price revision, which will be communicated and agreed before loading commences.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <div class="price-box">
+        <div class="price-row">
+          <span class="price-label">Precio total (IVA incluido)</span>
+          <span class="price-value"><span class="ph">{{PRICE_VAT}}</span></span>
+        </div>
+        <div class="price-row">
+          <span class="price-label">Precio sin impuestos</span>
+          <span class="price-sub"><span class="ph">{{PRICE}}</span></span>
+        </div>
+      </div>
+      <p>El precio cubre todos los servicios descritos en la Cláusula 1 y el tramo de transporte internacional, incluidos los procedimientos estándar de cruce de frontera. No incluye aranceles, impuestos, inspecciones aduaneras extraordinarias ni costes derivados de errores en la documentación aportada por EL/LA CLIENTE.</p>
+      <p>Un incremento sustancial del volumen o número de bultos respecto al Anexo I podrá dar lugar a un ajuste de precio, que será comunicado y acordado antes del inicio de la carga.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 6 ══ -->
+  <div class="section-title"><span class="num">6.</span> Payment / Forma de Pago</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>THE COMPANY will issue a secure <strong>Stripe</strong> payment link to <span class="ph">{{CLIENT_EMAIL}}</span> upon execution of this contract. Payment is due prior to the removal date. In the event of non-payment, THE COMPANY reserves the right to exercise a <strong>lien</strong> over the goods in transit, in accordance with the CMR Convention and applicable UK law (Torts (Interference with Goods) Act 1977). No goods will be released until all outstanding amounts are settled.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>LA EMPRESA remitirá a EL/LA CLIENTE un enlace de pago seguro mediante <strong>Stripe</strong> al correo electrónico <span class="ph">{{CLIENT_EMAIL}}</span> para formalizar el abono con tarjeta de débito o crédito tras la aceptación de este contrato. En caso de impago, LA EMPRESA podrá ejercer el <strong>derecho de retención</strong> sobre los bienes transportados conforme al Convenio CMR y la Ley 15/2009 del Contrato de Transporte Terrestre de Mercancías. Los bienes no serán liberados hasta la liquidación íntegra de las cantidades adeudadas.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 7 ══ -->
+  <div class="section-title"><span class="num">7.</span> Inventory and Declaration of Goods / Inventario y Declaración de Bienes</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>This contract is based on the inventory in <strong>Annexe I</strong>. THE CUSTOMER warrants that the inventory is complete and accurate, that no undeclared high-value items are included, that no prohibited, hazardous, or controlled items are included, and that the goods are legally owned by or under the authority of THE CUSTOMER. Any inaccuracy releases THE COMPANY from liability for undeclared goods and may affect customs clearance.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>Este contrato se basa en el inventario del <strong>Anexo I</strong>. EL/LA CLIENTE garantiza que el inventario es completo y veraz, que no se incluyen bienes de alto valor no declarados, que no se transportan objetos prohibidos, peligrosos o sometidos a control, y que los bienes son de su plena propiedad o dispone de autorización suficiente. Cualquier inexactitud eximirá a LA EMPRESA de responsabilidad sobre los bienes no declarados y podrá afectar al despacho aduanero.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 8 ══ -->
+  <div class="section-title"><span class="num">8.</span> Access and Property Conditions / Accesos y Condiciones del Inmueble</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>THE CUSTOMER warrants that access conditions at both addresses match those declared in Clause 2 and Annexe I. The quoted price includes reasonable vehicle access and a maximum carry distance of 25 metres from vehicle to front door at both locations. Not included: hoisting equipment, council permits, staircase carry where a lift was declared operative but is not, or delays caused by the property not being ready.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>EL/LA CLIENTE garantiza que las condiciones de acceso en ambas direcciones son las declaradas en la Cláusula 2 y el Anexo I. El precio incluye acceso razonable para vehículo de carga y una distancia máxima de acarreo de 25 metros desde el vehículo hasta el portal en ambas ubicaciones. No están incluidos: grúas elevadoras, permisos municipales, acarreo por escalera si el ascensor fue declarado operativo y no lo estaba, ni demoras por falta de preparación del inmueble.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 9 ══ -->
+  <div class="section-title"><span class="num">9.</span> Liability / Responsabilidad</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>This contract is governed by the laws of <strong>England and Wales</strong> for the UK leg and by <strong>Spanish law</strong> for the Spanish leg, with the <strong>CMR Convention</strong> applying to the international transit.</p>
+      <p>THE COMPANY's liability during the international road transit is governed by the CMR Convention. Under Article 23 of the CMR, liability for loss or damage is limited to <strong>8.33 SDR (Special Drawing Rights) per kilogram</strong> of gross weight of the goods lost or damaged, unless a higher value has been declared and an additional charge agreed (CMR Article 24).</p>
+      <p>THE COMPANY shall not be liable for: force majeure; inherent vice or natural deterioration; packing carried out by THE CUSTOMER; items not in Annexe I; undeclared high-value items; customs delays or seizures arising from documentation errors; or any indirect, consequential, or economic loss.</p>
+      <p>Applicable law references:</p>
+      <ul>
+        <li><strong>CMR Convention (Geneva, 1956)</strong> — international road transit.</li>
+        <li><strong>Carriage of Goods by Road Act 1965</strong> (UK) — UK leg and CMR implementation.</li>
+        <li><strong>Consumer Rights Act 2015</strong> (UK) — consumer protection on UK-origin contracts.</li>
+        <li><strong>Ley 15/2009</strong> — Spanish domestic transport law (Spanish leg).</li>
+        <li><strong>Real Decreto Legislativo 1/2007</strong> — Spanish consumer rights.</li>
+      </ul>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>Este contrato se rige por la legislación de <strong>Inglaterra y Gales</strong> para el tramo del Reino Unido, por el <strong>Derecho español</strong> para el tramo en España, y por el <strong>Convenio CMR</strong> para el tramo de transporte internacional.</p>
+      <p>La responsabilidad de LA EMPRESA durante el transporte internacional por carretera se rige por el Convenio CMR. Conforme al Artículo 23 del CMR, la indemnización por pérdida o daño está limitada a <strong>8,33 DEG (Derechos Especiales de Giro) por kilogramo</strong> de peso bruto de la mercancía perdida o dañada, salvo declaración de valor superior y pago de suplemento acordado (Artículo 24 CMR).</p>
+      <p>LA EMPRESA no será responsable por: fuerza mayor; vicio propio o deterioro natural; embalaje realizado por EL/LA CLIENTE; objetos no incluidos en el Anexo I; bienes de alto valor no declarados; retrasos o retenciones aduaneras por errores documentales; ni pérdidas indirectas, consecuenciales o de carácter económico.</p>
+      <p>Marco legal aplicable:</p>
+      <ul>
+        <li><strong>Convenio CMR (Ginebra, 1956)</strong> — tramo de transporte internacional.</li>
+        <li><strong>Carriage of Goods by Road Act 1965</strong> (RU) — tramo UK e implementación CMR.</li>
+        <li><strong>Consumer Rights Act 2015</strong> (RU) — protección del consumidor en contratos de origen UK.</li>
+        <li><strong>Ley 15/2009</strong> — transporte terrestre español (tramo en España).</li>
+        <li><strong>Real Decreto Legislativo 1/2007</strong> — derechos del consumidor en España.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 10 ══ -->
+  <div class="section-title"><span class="num">10.</span> Insurance / Seguro</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>THE COMPANY holds goods in transit insurance for international road transport. Standard CMR liability limits apply (Clause 9). If THE CUSTOMER wishes to declare a specific replacement value or obtain all-risks cover, this must be requested in writing at least <strong>48 hours before the removal date</strong>. Any additional premium will be communicated and agreed in writing before service commences.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>LA EMPRESA dispone de seguro de mercancías en tránsito para transporte internacional por carretera. Se aplicarán los límites de responsabilidad CMR estándar (Cláusula 9). Si EL/LA CLIENTE desea declarar un valor específico de reposición u obtener cobertura a todo riesgo, deberá solicitarlo por escrito con al menos <strong>48 horas de antelación</strong> a la fecha de mudanza. El coste adicional del seguro ampliado será comunicado y acordado por escrito antes del inicio del servicio.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 11 ══ -->
+  <div class="section-title"><span class="num">11.</span> Claims / Reclamaciones</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>In accordance with Article 30 of the CMR Convention:</p>
+      <ul>
+        <li><strong>Apparent damage or loss:</strong> must be noted in writing on the CMR consignment note at the time of delivery.</li>
+        <li><strong>Non-apparent damage:</strong> must be notified in writing to THE COMPANY within <strong>7 calendar days</strong> of delivery.</li>
+        <li><strong>Delay:</strong> claims for loss caused by delay must be made in writing within <strong>21 calendar days</strong> of the goods being placed at the disposal of THE CUSTOMER.</li>
+      </ul>
+      <p>Failure to notify within these timeframes extinguishes any right of action under the CMR.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>De conformidad con el Artículo 30 del Convenio CMR:</p>
+      <ul>
+        <li><strong>Daños o pérdidas aparentes:</strong> deben hacerse constar por escrito en la carta de porte CMR en el momento de la entrega.</li>
+        <li><strong>Daños no aparentes:</strong> deben notificarse por escrito a LA EMPRESA en un plazo máximo de <strong>7 días naturales</strong> desde la entrega.</li>
+        <li><strong>Retraso:</strong> las reclamaciones por pérdida derivada de retraso deben formularse por escrito en un plazo de <strong>21 días naturales</strong> desde la puesta a disposición de los bienes.</li>
+      </ul>
+      <p>La falta de notificación en los plazos indicados extingue cualquier derecho de acción al amparo del Convenio CMR.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 12 ══ -->
+  <div class="section-title"><span class="num">12.</span> Cancellation / Cancelación</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <div class="notice-box">
+        <div class="notice-label">Consumer Contracts Regulations 2013</div>
+        Where this contract has been concluded at a distance or off-premises, THE CUSTOMER has the right to cancel within 14 days without giving any reason, except where the service has commenced at THE CUSTOMER's explicit request before expiry of the cooling-off period.
+      </div>
+      <p>Following expiry of the statutory cooling-off period:</p>
+      <ul>
+        <li><strong>More than 7 calendar days</strong> before the removal date: full refund.</li>
+        <li><strong>Between 7 and 3 calendar days</strong> before: 30% of total price retained.</li>
+        <li><strong>Less than 72 hours</strong> before: 50% of total price retained.</li>
+      </ul>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <div class="notice-box es">
+        <div class="notice-label">Derecho de desistimiento — RDL 1/2007</div>
+        Cuando el contrato se haya celebrado a distancia o fuera del establecimiento, EL/LA CLIENTE dispondrá de un plazo de 14 días naturales para desistir sin necesidad de justificación, salvo que el servicio se haya iniciado a petición expresa del cliente antes del fin del período de desistimiento.
+      </div>
+      <p>Transcurrido el período legal de desistimiento, se aplicarán las siguientes condiciones:</p>
+      <ul>
+        <li><strong>Más de 7 días naturales</strong> antes de la mudanza: devolución íntegra.</li>
+        <li><strong>Entre 7 y 3 días naturales</strong> antes: retención del 30% del precio total.</li>
+        <li><strong>Menos de 72 horas</strong> antes: retención del 50% del precio total.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 13 ══ -->
+  <div class="section-title"><span class="num">13.</span> Data Protection / Protección de Datos</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>Personal data is processed in accordance with the <strong>UK GDPR</strong> and <strong>Data Protection Act 2018</strong> for UK-originating data, and the <strong>EU GDPR (Regulation 2016/679)</strong> and <strong>LOPDGDD (Ley Orgánica 3/2018)</strong> for data concerning Spanish residents. Data is processed solely for service fulfilment and will not be sold. THE CUSTOMER may exercise data rights by contacting hello@gotovan.co.uk, and may lodge a complaint with the <strong>ICO</strong> (UK) or <strong>AEPD</strong> (Spain).</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>Los datos personales se tratan conforme al <strong>UK GDPR</strong> y la <strong>Data Protection Act 2018</strong> para datos de origen en el Reino Unido, y conforme al <strong>RGPD (Reglamento UE 2016/679)</strong> y la <strong>LOPDGDD (Ley Orgánica 3/2018)</strong> para datos de residentes en España. Los datos se tratan exclusivamente para la ejecución del servicio y no serán cedidos comercialmente. EL/LA CLIENTE puede ejercer sus derechos contactando con hello@gotovan.co.uk, y tiene derecho a reclamar ante la <strong>ICO</strong> (Reino Unido) o la <strong>AEPD</strong> (España).</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 14 ══ -->
+  <div class="section-title"><span class="num">14.</span> Governing Law and Jurisdiction / Jurisdicción y Ley Aplicable</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>This contract is governed by the laws of <strong>England and Wales</strong> in respect of the UK leg and by <strong>Spanish law</strong> in respect of the Spanish leg, with the CMR Convention applying to the international transit. For consumer disputes, THE CUSTOMER retains the right to bring proceedings before the courts of their habitual residence.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>El presente contrato se rige por la legislación de <strong>Inglaterra y Gales</strong> en lo relativo al tramo en el Reino Unido, y por el <strong>Derecho español</strong> en lo relativo al tramo en España, siendo de aplicación el Convenio CMR para el tramo internacional. En materia de consumo, EL/LA CLIENTE conserva el derecho a ejercer acciones ante los tribunales de su domicilio habitual.</p>
+    </div>
+  </div>
+
+  <!-- ══ CLAUSE 15 ══ -->
+  <div class="section-title"><span class="num">15.</span> Execution / Aceptación y Firma</div>
+  <div class="clause">
+    <div class="clause-en">
+      <span class="lang-tag en">EN</span>
+      <p>This contract, together with Annexe I, constitutes the entire agreement between the parties and supersedes all prior representations and understandings. No variation shall be effective unless agreed in writing by both parties.</p>
+    </div>
+    <div class="clause-es">
+      <span class="lang-tag es">ES</span>
+      <p>El presente contrato, junto con el Anexo I, constituye el acuerdo íntegro entre las partes y deja sin efecto cualquier representación o entendimiento previo. Ninguna modificación será válida salvo acuerdo escrito de ambas partes.</p>
+    </div>
+  </div>
+
+  <!-- ══ SIGNATURES ══ -->
+  <div class="signature-grid">
+    <div class="sig-block">
+      <div class="sig-party">The Company / La Empresa</div>
+      <div class="sig-name">GotoVan – The Avocado Shop LTD</div>
+      <div class="sig-field">Domingo Gonzalez Alonso</div>
+      <div class="sig-line"></div>
+      <div class="sig-field">Signature / Firma</div>
+      <div class="sig-line" style="height:28px;"></div>
+      <div class="sig-field">Date / Fecha</div>
+    </div>
+    <div class="sig-block">
+      <div class="sig-party">The Customer / El/La Cliente</div>
+      <div class="sig-name"><span class="ph">{{CLIENT_NAME}}</span></div>
+      <div class="sig-field">Passport / DNI: ___________________________</div>
+      <div class="sig-line"></div>
+      <div class="sig-field">Signature / Firma</div>
+      <div class="sig-line" style="height:28px;"></div>
+      <div class="sig-field">Date / Fecha</div>
+    </div>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <div class="doc-footer">
+    <span>GotoVan – hello@gotovan.co.uk</span>
+    <span>Ref: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+  </div>
+
+  <!-- ══ ANNEXE I ══ -->
+  <div class="page-break">
+    <div class="annexe-title">Annexe I / Anexo I — Inventory / Inventario</div>
+    <div class="annexe-subtitle">
+      Forming part of / Parte integrante del Contrato Ref. <span class="ph">{{CONTRACT_REFERENCE}}</span> —
+      GotoVan – The Avocado Shop LTD &amp; <span class="ph">{{CLIENT_NAME}}</span>
+    </div>
+    <div class="annexe-content">
+      <span class="ph">{{ANNEXE_CONTENT}}</span>
+    </div>
+    <div class="doc-footer" style="margin-top:32px;">
+      <span>GotoVan – hello@gotovan.co.uk</span>
+      <span>Annexe I · Ref: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+    </div>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>

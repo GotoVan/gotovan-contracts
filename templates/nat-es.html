@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contrato de Mudanza Nacional – España | GotoVan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --mid: #4a4a4a;
+      --light: #7a7a7a;
+      --rule: #d0d0d0;
+      --accent: #91bcf0;
+      --bg: #ffffff;
+      --page-width: 820px;
+      --font-serif: 'Source Serif 4', Georgia, serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f0ece6;
+      font-family: var(--font-serif);
+      color: var(--ink);
+      font-size: 10.5pt;
+      line-height: 1.65;
+    }
+
+    .page {
+      background: var(--bg);
+      max-width: var(--page-width);
+      margin: 40px auto;
+      padding: 72px 80px;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.12);
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--ink);
+      margin-bottom: 40px;
+    }
+
+    .header-logo img {
+      height: 64px;
+      width: auto;
+      display: block;
+    }
+
+    .header-meta {
+      text-align: right;
+      font-size: 8.5pt;
+      color: var(--light);
+      line-height: 1.7;
+    }
+
+    .header-meta strong {
+      display: block;
+      font-size: 9pt;
+      color: var(--mid);
+      font-weight: 600;
+    }
+
+    .ref-badge {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 3px 10px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 8pt;
+      letter-spacing: 0.08em;
+      font-family: 'Source Serif 4', serif;
+    }
+
+    /* ── TITLE ── */
+    .contract-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contract-title h1 {
+      font-family: var(--font-display);
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    .contract-title .subtitle {
+      margin-top: 8px;
+      font-size: 10pt;
+      color: var(--mid);
+      font-style: italic;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 12pt;
+      font-weight: 600;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+      letter-spacing: 0.01em;
+    }
+
+    .section-title span.num {
+      color: var(--accent);
+      margin-right: 6px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: var(--mid);
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      color: var(--mid);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ── PARTIES TABLE ── */
+    .parties {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 36px;
+    }
+
+    .party-block {
+      padding: 20px 22px;
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--ink);
+    }
+
+    .party-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .party-name {
+      font-family: var(--font-display);
+      font-size: 12pt;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .party-detail {
+      font-size: 9pt;
+      color: var(--mid);
+      line-height: 1.7;
+    }
+
+    /* ── PLACEHOLDER ── */
+    .ph {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── PRICE BOX ── */
+    .price-box {
+      background: #f8f7f5;
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--ink);
+      padding: 18px 22px;
+      margin: 14px 0;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .price-row:last-child { margin-bottom: 0; }
+
+    .price-label { font-size: 9.5pt; color: var(--mid); }
+
+    .price-value {
+      font-family: var(--font-display);
+      font-size: 14pt;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .price-sub { font-size: 9pt; color: var(--light); }
+
+    /* ── CONDITIONAL CLAUSES ── */
+    .conditional {
+      border-left: 3px solid #e5e7eb;
+      padding: 10px 16px;
+      margin: 10px 0;
+      background: #fafafa;
+      font-size: 9.5pt;
+    }
+
+    .conditional .cond-label {
+      font-size: 7.5pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .conditional.yes { border-left-color: #16a34a; }
+    .conditional.no  { border-left-color: #dc2626; }
+
+    /* ── SIGNATURE BLOCK ── */
+    .signature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .sig-block .sig-party {
+      font-size: 8pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 8px;
+    }
+
+    .sig-block .sig-name {
+      font-family: var(--font-display);
+      font-size: 11pt;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .sig-line {
+      border-bottom: 1px solid var(--ink);
+      height: 48px;
+      margin: 16px 0 8px;
+    }
+
+    .sig-field {
+      font-size: 9pt;
+      color: var(--light);
+      margin-bottom: 14px;
+    }
+
+    /* ── ANNEXE PAGE ── */
+    .page-break {
+      page-break-before: always;
+      margin-top: 60px;
+      padding-top: 60px;
+      border-top: 2px solid var(--ink);
+    }
+
+    .annexe-title {
+      font-family: var(--font-display);
+      font-size: 18pt;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .annexe-subtitle {
+      font-size: 10pt;
+      color: var(--mid);
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+
+    .annexe-content {
+      min-height: 400px;
+      border: 1px dashed var(--rule);
+      padding: 24px;
+      font-size: 9.5pt;
+      color: var(--light);
+    }
+
+    /* ── FOOTER ── */
+    .doc-footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      font-size: 8pt;
+      color: var(--light);
+    }
+
+    @media print {
+        body { background: white; }
+        .page { 
+            box-shadow: none; 
+            margin: 0; 
+            padding: 48px 56px;
+        }
+        @page {
+            margin: 48px 56px;
+        }
+    }
+
+    /* ── PAGE BREAK CONTROL ── */
+    .section {
+        page-break-inside: avoid;
+    }
+
+    .clause {
+        page-break-inside: avoid;
+    }
+
+    .parties {
+        page-break-inside: avoid;
+    }
+
+    .signature-grid {
+        page-break-inside: avoid;
+    }
+
+    .price-box {
+        page-break-inside: avoid;
+    }
+
+    .cmr-box {
+        page-break-inside: avoid;
+    }
+
+    .notice-box {
+        page-break-inside: avoid;
+    }
+
+    .party-block {
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3, .section-title {
+        page-break-after: avoid;
+    }
+
+    @page {
+        margin: 48px 0;
+    }
+
+    .page {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ══ HEADER ══ -->
+  <div class="header">
+    <div class="header-logo">
+      <img src="logo.png" alt="GotoVan Logo" />
+    </div>
+    <div class="header-meta">
+      <strong>GotoVan – The Avocado Shop LTD</strong>
+      61 High Street, Chobham, Surrey, GU24 8AF, UK<br/>
+      +44 (0) 7394329184 · hello@gotovan.co.uk<br/>
+      <span class="ref-badge">REF: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+    </div>
+  </div>
+
+  <!-- ══ TITLE ══ -->
+  <div class="contract-title">
+    <h1>Contrato de Prestación de<br/>Servicios de Mudanza Nacional</h1>
+    <div class="subtitle">Entre profesional y consumidor — España</div>
+  </div>
+
+  <!-- ══ PARTIES ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">§</span> Reunidos</div>
+    <div class="parties">
+      <div class="party-block">
+        <div class="party-label">La Empresa</div>
+        <div class="party-name">GotoVan – The Avocado Shop LTD</div>
+        <div class="party-detail">
+          61 High Street, Chobham, Surrey, GU24 8AF, United Kingdom<br/>
+          Tel: +44 (0) 7394329184<br/>
+          Email: hello@gotovan.co.uk<br/>
+          Representante: Domingo Gonzalez Alonso
+        </div>
+      </div>
+      <div class="party-block">
+        <div class="party-label">El/La Cliente</div>
+        <div class="party-name"><span class="ph">{{CLIENT_NAME}}</span></div>
+        <div class="party-detail">
+          Email: <span class="ph">{{CLIENT_EMAIL}}</span><br/>
+          Teléfono: <span class="ph">{{CLIENT_PHONE}}</span><br/>
+          Dirección de facturación: <span class="ph">{{CLIENT_ADDRESS}}</span>
+        </div>
+      </div>
+    </div>
+    <p>Ambas partes, reconociéndose capacidad legal suficiente, acuerdan suscribir el presente contrato de mudanza nacional, que se regirá por las cláusulas siguientes.</p>
+  </div>
+
+  <!-- ══ CLAUSE 1 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">1.</span> Objeto del Contrato</div>
+    <p>LA EMPRESA se obliga a prestar a EL/LA CLIENTE el servicio de mudanza nacional consistente en:</p>
+    <ul>
+      <!-- CONDITIONAL: Packaging -->
+      {{#if IF_PACKAGING_YES}}
+      <li>Embalaje profesional de los bienes relacionados en el Anexo I (Inventario), con material asumido íntegramente por LA EMPRESA.</li>
+      {{/if}}
+      {{#if IF_PACKAGING_NO}}
+      <li>El embalaje de los bienes será responsabilidad exclusiva de EL/LA CLIENTE. LA EMPRESA no asumirá responsabilidad por daños derivados de un embalaje insuficiente.</li>
+      {{/if}}
+      <li>Carga en el domicilio de origen.</li>
+      <li>Transporte por carretera hasta el domicilio de destino.</li>
+      <li>Descarga y colocación básica en el interior de la vivienda de destino.</li>
+      <!-- CONDITIONAL: Installation -->
+      {{#if IF_INSTALLATION_YES}}
+      <li>Instalación básica de mobiliario según acuerdo previo.</li>
+      {{/if}}
+      {{#if IF_INSTALLATION_NO}}
+      <li>No se incluye montaje, instalación ni colocación detallada en armarios, salvo contratación expresa adicional.</li>
+      {{/if}}
+    </ul>
+  </div>
+
+  <!-- ══ CLAUSE 2 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">2.</span> Direcciones del Servicio</div>
+    <p><strong>Origen:</strong> <span class="ph">{{COLLECTION_ADDRESS}}</span></p>
+    <p><strong>Destino:</strong> <span class="ph">{{DESTINATION_ADDRESS}}</span></p>
+    <p>A efectos presupuestarios, las condiciones de acceso presupuestadas son las siguientes:</p>
+    <ul>
+      <!-- CONDITIONAL: Elevator -->
+      {{#if IF_ELEVATOR_YES}}
+      <li>Ascensor operativo disponible en destino. El precio presupuestado contempla este acceso.</li>
+      {{/if}}
+      {{#if IF_ELEVATOR_NO}}
+      <li>Acceso sin ascensor. El precio presupuestado incluye el acarreo por escalera según la planta y número de bultos declarados en el Anexo I.</li>
+      {{/if}}
+      <!-- CONDITIONAL: Parking -->
+      {{#if IF_PARKING_YES}}
+      <li>Estacionamiento para vehículo de gran tonelaje garantizado en origen y destino.</li>
+      {{/if}}
+      {{#if IF_PARKING_NO}}
+      <li>La obtención de los permisos de estacionamiento o reserva de vía pública, en caso de ser necesarios, será responsabilidad de EL/LA CLIENTE. Los costes derivados de multas o demoras por falta de reserva no serán asumidos por LA EMPRESA.</li>
+      {{/if}}
+    </ul>
+  </div>
+
+  <!-- ══ CLAUSE 3 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">3.</span> Fecha y Horario</div>
+    <p>La mudanza queda fijada para el día <strong><span class="ph">{{REMOVAL_DATE}}</span></strong>.</p>
+    <p>El equipo de LA EMPRESA acudirá al domicilio de origen a las 08:00 horas para iniciar los trabajos. La descarga en destino se efectuará el mismo día, salvo causas de fuerza mayor, tráfico extraordinario o incidencias no imputables a LA EMPRESA.</p>
+    <p>Cualquier modificación de fecha solicitada por EL/LA CLIENTE con menos de 72 horas de antelación podrá dar lugar a la retención prevista en la cláusula de cancelación.</p>
+  </div>
+
+  <!-- ══ CLAUSE 4 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">4.</span> Precio</div>
+    <div class="price-box">
+      <div class="price-row">
+        <span class="price-label">Precio base (sin IVA)</span>
+        <span class="price-value"><span class="ph">{{PRICE}}</span> €</span>
+      </div>
+      <div class="price-row">
+        <span class="price-label">IVA (20%)</span>
+        <span class="price-sub">incluido en precio final</span>
+      </div>
+      <div class="price-row">
+        <span class="price-label">Precio total (IVA incluido)</span>
+        <span class="price-value"><span class="ph">{{PRICE_VAT}}</span> €</span>
+      </div>
+    </div>
+    <p>El precio incluye todos los conceptos detallados en la Cláusula 1. Cualquier servicio adicional no contemplado en el presente contrato deberá acordarse por escrito antes del inicio del servicio y se facturará separadamente.</p>
+    <p>Cualquier incremento sustancial de volumen o número de bultos respecto al Anexo I declarado podrá dar lugar a un ajuste de precio previamente informado y aceptado por EL/LA CLIENTE antes de iniciar la carga.</p>
+  </div>
+
+  <!-- ══ CLAUSE 5 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">5.</span> Forma de Pago</div>
+    <p>LA EMPRESA remitirá a EL/LA CLIENTE un enlace de pago seguro mediante <strong>Stripe</strong> al correo electrónico <span class="ph">{{CLIENT_EMAIL}}</span> para formalizar el abono mediante tarjeta de débito o crédito, una vez aceptado el presente contrato.</p>
+    <p>En caso de impago total o parcial, LA EMPRESA podrá ejercer el <strong>derecho de retención</strong> sobre los bienes transportados, conforme a la Ley 15/2009, de 11 de noviembre, del Contrato de Transporte Terrestre de Mercancías.</p>
+  </div>
+
+  <!-- ══ CLAUSE 6 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">6.</span> Inventario y Declaración de Bienes</div>
+    <p>El servicio se presta sobre la base del inventario aportado por EL/LA CLIENTE como <strong>Anexo I</strong> al presente contrato. EL/LA CLIENTE declara expresamente:</p>
+    <ul>
+      <li>Que la información facilitada es completa, exacta y veraz.</li>
+      <li>Que no existen bienes no declarados de especial valor económico o sentimental.</li>
+      <li>Que no se incluyen objetos prohibidos, sustancias peligrosas, armas, estupefacientes ni elementos que requieran autorización especial de transporte.</li>
+      <li>Que los bienes son de su plena propiedad o dispone de autorización suficiente para su traslado.</li>
+    </ul>
+    <p>La falsedad u omisión en la declaración de bienes eximirá a LA EMPRESA de cualquier responsabilidad sobre los mismos.</p>
+  </div>
+
+  <!-- ══ CLAUSE 7 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">7.</span> Accesos y Condiciones del Inmueble</div>
+    <p>EL/LA CLIENTE garantiza que las condiciones de acceso en origen y destino son las descritas en la Cláusula 2 y en el Anexo I. El precio presupuestado contempla:</p>
+    <ul>
+      <li>Acceso razonable para vehículo de carga en origen y destino.</li>
+      <li>Distancia máxima de acarreo desde el vehículo hasta el portal no superior a 25 metros.</li>
+    </ul>
+    <p>No están incluidos en el precio, y se presupuestarán separadamente si proceden:</p>
+    <ul>
+      <li>Grúas elevadoras o plataformas especiales.</li>
+      <li>Permisos municipales u ocupación de vía pública.</li>
+      <li>Manipulación extraordinaria por ausencia de ascensor si éste fue declarado como disponible.</li>
+      <li>Demoras imputables a la falta de preparación del inmueble.</li>
+    </ul>
+  </div>
+
+  <!-- ══ CLAUSE 8 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">8.</span> Responsabilidad</div>
+    <p>El presente servicio se rige por:</p>
+    <ul>
+      <li><strong>Ley 15/2009, de 11 de noviembre</strong>, del Contrato de Transporte Terrestre de Mercancías.</li>
+      <li><strong>Real Decreto Legislativo 1/2007</strong>, por el que se aprueba el Texto Refundido de la Ley General para la Defensa de los Consumidores y Usuarios.</li>
+      <li><strong>Código de Comercio</strong> español en lo que resulte de aplicación.</li>
+    </ul>
+    <p>LA EMPRESA responderá por los daños derivados de dolo o negligencia imputable a su actuación o a la de su personal. La indemnización se limitará, salvo declaración expresa de valor adicional, al límite legal vigente por kilogramo transportado conforme a la legislación nacional aplicable.</p>
+    <p>LA EMPRESA no será responsable por:</p>
+    <ul>
+      <li>Daños causados por fuerza mayor o caso fortuito.</li>
+      <li>Vicio propio del bien o deterioro natural.</li>
+      <li>Embalaje insuficiente realizado por EL/LA CLIENTE.</li>
+      <li>Bienes no declarados en el Anexo I.</li>
+      <li>Daños en objetos frágiles no adecuadamente identificados o protegidos.</li>
+    </ul>
+  </div>
+
+  <!-- ══ CLAUSE 9 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">9.</span> Seguro</div>
+    <p>El servicio incluye cobertura de seguro de responsabilidad civil conforme a la normativa española de transporte terrestre de mercancías.</p>
+    <p>Si EL/LA CLIENTE desea ampliar la cobertura mediante seguro a todo riesgo con declaración expresa de valor de los bienes, deberá solicitarlo por escrito antes del inicio del servicio. El coste adicional del seguro ampliado será comunicado y aceptado por ambas partes.</p>
+  </div>
+
+  <!-- ══ CLAUSE 10 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">10.</span> Reclamaciones</div>
+    <ul>
+      <li><strong>Daños visibles:</strong> deberán hacerse constar por escrito en el albarán de entrega en el momento de la recepción de los bienes.</li>
+      <li><strong>Daños no visibles:</strong> EL/LA CLIENTE dispondrá de un plazo máximo de <strong>7 días naturales</strong> desde la entrega para comunicar la reclamación por escrito a hello@gotovan.co.uk.</li>
+    </ul>
+    <p>La firma del albarán de entrega sin reserva ni observación alguna presumirá la correcta recepción de los bienes en buen estado.</p>
+  </div>
+
+  <!-- ══ CLAUSE 11 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">11.</span> Cancelación y Modificación</div>
+    <p>En caso de cancelación del servicio por parte de EL/LA CLIENTE, se aplicarán las siguientes condiciones:</p>
+    <ul>
+      <li><strong>Más de 7 días naturales antes</strong> de la fecha de mudanza: devolución íntegra del importe abonado.</li>
+      <li><strong>Entre 7 y 3 días naturales</strong> antes: retención del 30% del precio total.</li>
+      <li><strong>Menos de 72 horas</strong> antes: retención del 50% del precio total.</li>
+    </ul>
+    <p>Cualquier modificación de fecha, dirección o alcance del servicio requerirá confirmación escrita por ambas partes y podrá suponer un ajuste de precio.</p>
+  </div>
+
+  <!-- ══ CLAUSE 12 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">12.</span> Protección de Datos</div>
+    <p>Los datos personales facilitados por EL/LA CLIENTE serán tratados por GotoVan – The Avocado Shop LTD con la única finalidad de gestionar y ejecutar el presente contrato, de conformidad con el <strong>Reglamento (UE) 2016/679 (RGPD)</strong> y la <strong>Ley Orgánica 3/2018 (LOPDGDD)</strong>.</p>
+    <p>Los datos no serán cedidos a terceros salvo obligación legal o necesidad operativa directamente vinculada a la ejecución del servicio (transportistas colaboradores, aseguradoras). EL/LA CLIENTE podrá ejercer sus derechos de acceso, rectificación, supresión, oposición y portabilidad dirigiéndose a hello@gotovan.co.uk.</p>
+  </div>
+
+  <!-- ══ CLAUSE 13 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">13.</span> Jurisdicción y Ley Aplicable</div>
+    <p>El presente contrato se rige por la legislación española. Para cualquier controversia derivada de su interpretación o ejecución, las partes se someten a los Juzgados y Tribunales del domicilio de EL/LA CLIENTE en España, conforme a la normativa vigente de protección de consumidores.</p>
+  </div>
+
+  <!-- ══ CLAUSE 14 ══ -->
+  <div class="section">
+    <div class="section-title"><span class="num">14.</span> Aceptación y Firma</div>
+    <p>El presente contrato, junto con el Anexo I (Inventario), constituye el documento contractual íntegro y vinculante entre las partes. Cualquier acuerdo verbal previo queda sin efecto desde la firma del presente.</p>
+    <p>Leído en su totalidad y en prueba de conformidad, ambas partes suscriben el presente contrato.</p>
+
+    <div class="signature-grid">
+      <div class="sig-block">
+        <div class="sig-party">La Empresa</div>
+        <div class="sig-name">GotoVan – The Avocado Shop LTD</div>
+        <div class="sig-field">Representante: Domingo Gonzalez Alonso</div>
+        <div class="sig-line"></div>
+        <div class="sig-field">Firma</div>
+        <div class="sig-line" style="height:28px;"></div>
+        <div class="sig-field">Fecha</div>
+      </div>
+      <div class="sig-block">
+        <div class="sig-party">El/La Cliente</div>
+        <div class="sig-name"><span class="ph">{{CLIENT_NAME}}</span></div>
+        <div class="sig-field">DNI / Pasaporte: ___________________________</div>
+        <div class="sig-line"></div>
+        <div class="sig-field">Firma</div>
+        <div class="sig-line" style="height:28px;"></div>
+        <div class="sig-field">Fecha</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <div class="doc-footer">
+    <span>GotoVan – hello@gotovan.co.uk</span>
+    <span>Ref: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+  </div>
+
+  <!-- ══ ANNEXE I ══ -->
+  <div class="page-break">
+    <div class="annexe-title">Anexo I — Inventario</div>
+    <div class="annexe-subtitle">
+      Documento integrante del Contrato Ref. <span class="ph">{{CONTRACT_REFERENCE}}</span> suscrito entre GotoVan – The Avocado Shop LTD y <span class="ph">{{CLIENT_NAME}}</span>.
+    </div>
+    <div class="annexe-content">
+      <!-- INJECT INVENTORY HERE -->
+      <span class="ph">{{ANNEXE_CONTENT}}</span>
+    </div>
+    <div class="doc-footer" style="margin-top:32px;">
+      <span>GotoVan – hello@gotovan.co.uk</span>
+      <span>Anexo I · Ref: <span class="ph">{{CONTRACT_REFERENCE}}</span></span>
+    </div>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>
