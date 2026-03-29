@@ -45,7 +45,7 @@ function initSchema(db: Database.Database) {
       elevator_required INTEGER NOT NULL DEFAULT 0,
       installation_required INTEGER NOT NULL DEFAULT 0,
       drive_file_id TEXT,
-      created_by INTEGER REFERENCES users(id),
+      created_by TEXT,
       created_at TEXT DEFAULT (datetime('now')),
       updated_at TEXT DEFAULT (datetime('now'))
     );
